@@ -17,27 +17,30 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch',
     'ngMaterial'
   ])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl',
-        controllerAs: 'main'
+        templateUrl: '../core/pages/landing-page/landing-page.html',
+        controller: 'landingPageCtrl',
+        controllerAs: 'vm'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl',
-        controllerAs: 'about'
+      .when('/404', {
+        templateUrl: '../core/pages/404/404.html'
       })
       .otherwise({
-        redirectTo: '/'
+        redirectTo: '/404'
       });
   })
-.config(function($mdThemingProvider) {
-  $mdThemingProvider.theme('default')
+  .config(function ($mdThemingProvider) {
+    $mdThemingProvider.theme('default')
       .primaryPalette('lime')
-      .accentPalette('orange');
-});
+      .accentPalette('blue');
+
+    $mdThemingProvider.theme('dark')
+      .primaryPalette('lime')
+      .accentPalette('blue')
+      .dark();
+  });
+

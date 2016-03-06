@@ -1,3 +1,10 @@
+
+.thumbnail {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+}
+
 .full-height {
   height: 100%;
 }
@@ -17,6 +24,7 @@
 .half-width {
   width: 50%;
 }
+
 md-input-container.md-dark-theme label,
 md-input-container.md-dark-theme .md-placeholder {
   text-shadow: none;

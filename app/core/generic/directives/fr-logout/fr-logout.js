@@ -25,6 +25,7 @@
       //loginCtrl.failedretries = 0;
 
       logoutCtrl.clickSubmit = function () {
+
         //request pictures
         $http.get('http://localhost:3000/api/filemanagement')
           .then(function successCallback(response) {

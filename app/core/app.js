@@ -27,6 +27,11 @@ angular
         controller: 'landingPageCtrl',
         controllerAs: 'vm'
       })
+      .when('/loggedin',{
+        templateUrl: '../core/pages/logged-in/logged-in.html',
+        controller: 'loggedInPageCtrl',
+        controllerAs: 'vm1'
+      })
       .when('/404', {
         templateUrl: '../core/pages/404/404.html'
       })

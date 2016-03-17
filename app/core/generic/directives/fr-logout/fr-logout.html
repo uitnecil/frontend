@@ -1,9 +1,5 @@
 <md-toolbar class="full-height">
-  <h2 class="md-toolbar-tools">
-      <form ng-submit="logoutCtrl.clearToken()" name="logoutForm" >
-        <section layout="row" layout-sm="row" layout-align="end end" layout-wrap>
-          <md-button class="md-raised md-primary my-button"  type="submit">Logout</md-button>
-        </section>
-        <form/>
-  </h2>
+  <div class="md-toolbar-tools" layout="row" layout-align="end center">
+          <md-button class="md-raised md-primary my-button" ng-click="logoutCtrl.clearToken()"  type="submit">Logout</md-button>
+  </div>
 </md-toolbar>

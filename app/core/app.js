@@ -42,12 +42,12 @@ angular
 
   .config(function ($mdThemingProvider) {
     $mdThemingProvider.theme('default')
-      .primaryPalette('lime')
-      .accentPalette('blue');
+      .primaryPalette('amber')
+      .accentPalette('lime');
 
     $mdThemingProvider.theme('dark')
-      .primaryPalette('lime')
-      .accentPalette('blue')
+      .primaryPalette('amber')
+      .accentPalette('lime')
       .dark();
   });
 

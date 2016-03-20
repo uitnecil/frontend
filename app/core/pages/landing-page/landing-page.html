@@ -8,16 +8,11 @@
 
     </div>
   </md-toolbar>
-  <div layout="row" layout-align="center center" class="full-height-with-menu">
-    <!--<md-content layout="column" layout-align="center center" flex="30" class="full-height" md-theme="dark">-->
-      <fr-login class="green-border"></fr-login>
-    <!--</md-content>-->
-    <!--<md-content flex layout="row" layout-wrap>-->
-      <!--<div class="thumbnail" ng-repeat="eachPicture in vm.myPictures">-->
-        <!--<img ng-src="http://localhost:3000/Pictures_redim/{{eachPicture.filenameRe_dimensioned}}"><br/>-->
-      <!--</div>-->
-    <!--</md-content>-->
-
+  <div layout="column" layout-align="center center" class="full-height-with-menu">
+    <fr-login ng-if="!vm.createNewUser" class="green-border"></fr-login>
+    <fr-mid-menu ng-if="vm.createNewUser" class="green-border"></fr-mid-menu>
+    <md-button ng-click="vm.createNewUser= !vm.createNewUser">
+        {{!vm.createNewUser ? 'Don''t have an user ?' : 'Already have an user?'}}
+    </md-button>
   </div>
-
 </md-content>

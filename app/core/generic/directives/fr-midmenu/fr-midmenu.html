@@ -1,0 +1,16 @@
+<md-content md-theme="dark" layout="column" layout-align="center center" class="login-container">
+<h2>New username:</h2> <br>
+  <form ng-submit="midMenuCtrl.addNewUser()" name="newUSerForm" >
+    <md-input-container class="full-width">
+      <label>New Email</label>
+      <input type="email" ng-model="midMenuCtrl.userEmail" ng-model-options="{debounce: 1000}"/>
+    </md-input-container>
+    <md-input-container class="full-width">
+      <label>New Password</label>
+      <input type="password" ng-model="midMenuCtrl.userPassword"/>
+    </md-input-container>
+    <section layout="row" layout-sm="column" layout-align="center end" layout-wrap>
+      <md-button class="md-raised md-primary my-button"  type="submit">Create My User</md-button>
+    </section>
+    </form>
+</md-content>

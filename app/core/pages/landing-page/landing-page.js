@@ -10,5 +10,6 @@
   function LandingPageCtrl(servicePictures) {
     var vm = this;
     vm.myPictures = servicePictures.myPictures;
+    vm.createNewUser = false;
   }
 })();
